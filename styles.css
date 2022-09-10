@@ -1,0 +1,232 @@
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; 
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f0f0f0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+nav{
+    top: 0;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 55px;
+    justify-content: end;
+}
+#navbar{
+    background-color: red;
+}
+#navbar a{
+    display: block;
+    font-size: 35px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#navbar a:hover{
+    display: block;
+    background-color: green;
+}
+section{
+    width: 100%;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+#welcome-section h1{
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#welcome-section h2{
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(181, 68, 68);
+}
+#projects{
+    margin-top: -70px;
+    background-color:  #45567d;
+    width: 100%;
+    height: 100vh;
+}
+h3{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.project-title{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.outer a{
+    display: block;
+}
+.outer img{
+    border: 2px solid white;
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+#no1{
+    border: 2px solid white;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.project-title p{
+    display: flex;
+    margin-top: -25px;
+    width: 80%;
+    height: auto;
+    background-color: #303841;
+    font-size: 1.5rem;
+    padding: 0px 10px 0px 10px;
+}
+footer{
+    display: block;
+    background-color: #303841;
+    width: 100%;
+    max-width: 100%;
+    height:50vh;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+footer h2{
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+footer p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: -20%;
+}
+#links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#profile-link{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#git , #facebook , #insta, #mail{
+    font-size: 25px;
+    color: white;
+}
+hr{
+    height: 2%;
+    background-color: red;
+}
+@media (max-width:815px) {
+    nav{
+        height: 4.1rem;
+    }
+    #navbar a{
+        font-size: 1.5rem;
+    }
+    #welcome-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 50vh;
+    }
+    #welcome-section h1{
+        font-size: 1.5rem;
+    }
+    #welcome-section h2{
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    #projects{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: -10rem;
+    }
+    .outer a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: -5%;
+    }
+    .outer img{
+        display:block ;
+        width: 50%;
+        height: auto;
+    }
+    #no1{
+        width: 50%;
+        height: auto;
+    }
+    .project-title p{
+        font-size: 1.3rem;
+       position: relative;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    footer{
+        margin-top: 20%;
+        width: 100%;
+        height: auto;
+    }
+    footer h2{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size: 1.1rem;
+    }
+    #git , #facebook, #insta, #mail{
+        font-size: 1.5rem;
+    }
+    hr{
+        color: red;
+
+    }
+}
+  
